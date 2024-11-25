@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="/styles/userlogin.css">
+    
+    <main>
+       <div class="left-side"></div>
+      
+      <div class="right-side">
+        <form method="post" action="/user/login" >
+        <input type="text" id="message" value="{{{message}}}" name="message" hidden>
+       <h1>User Login</h1>
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="password">Password</label>
+        <input id="password"  type="password" placeholder="Enter Password" name="password" required />
+
+        <button type="submit" class="login-btn">Login</button>
+     
+      </form>
+      <a href="/user/register">Sign Up</a>
+      <br>
+      <a href="/admin/login">Admin Login</a>
+      </div>
+      
+    </main>
+
+<script>
+const message = document.getElementById('message').value;
+
+if(message){
+
+    alert(message);
+
+}
+</script>

@@ -1,0 +1,33 @@
+
+    <link rel="stylesheet" href="/styles/adminLogin.css">
+    
+    <form action="/admin/login" method="post" >
+        <h3>Login Here</h3>
+        
+        <label for="username">Username</label>
+        <input type="text" name="email" placeholder="Email" id="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+
+        <button>Log In</button>
+        <br><br>
+        <a href="/user/login">User Login</a>
+
+        
+    </form>
+    <br>
+
+
+
+
+    <script>
+
+  const message = document.getElementById('message').value;
+
+  if(message){
+      swal(message);
+      message=null
+  }
+    </script>
+

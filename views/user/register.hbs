@@ -1,0 +1,40 @@
+
+<link rel="stylesheet" href="/styles/userlogin.css">
+
+<main>
+    <div class="left-side"></div>
+
+    <div class="right-side">
+
+        <form method="post" action="/user/register" >
+
+            <input type="text" id="message" value="{{{message}}}" name="message" hidden>
+
+         
+
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter Email" name="email"  />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter Password" name="password"  />
+
+            <label for="password">Confirm Password</label>
+            <input id="confirmPassword" type="password" placeholder="Enter Password" name="confirmPassword"  />
+            <button type="submit" class="login-btn">Sign in</button>
+           
+        </form>
+        <a href="/login">login</a>
+    </div>
+
+</main>
+
+
+<script>
+const message = document.getElementById('message').value;
+
+if(message){
+
+    alert(message);
+
+}
+</script>
